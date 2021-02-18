@@ -1,8 +1,10 @@
 const GiftItem = ({ id, title, url }) => {
   return (
     <>
-      <img src={url} alt="animated" />
-      <p>{title}</p>
+      <div className="card">
+        <img src={url} alt="animated" />
+        <p>{title}</p>
+      </div>
     </>
   );
 };

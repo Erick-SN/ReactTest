@@ -11,3 +11,26 @@ input {
   width: 100%;
   color: grey;
 }
+
+.card-gift {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  align-content: center;
+  border: 1px solid red;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.card p {
+  padding: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-height: 170px;
+}

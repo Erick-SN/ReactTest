@@ -19,9 +19,11 @@ const GiftGrid = ({ category }) => {
   return (
     <>
       <h3>{category}</h3>
-      {images.map((img) => (
-        <GiftItem key={img.id} {...img} />
-      ))}
+      <div className="card-gift">
+        {images.map((img) => (
+          <GiftItem key={img.id} {...img} />
+        ))}
+      </div>
     </>
   );
 };
