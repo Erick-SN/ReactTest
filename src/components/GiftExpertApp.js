@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import AddCategory from './AddCategory';
+import GiftGrid from './GiftGrid';
 
 const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(['DBZ', 'HXH', 'OP']);
+  const [categories, setCategories] = useState(['One Punch']);
 
   return (
     <>
@@ -11,7 +12,7 @@ const GiftExpertApp = () => {
       <hr />
       <ol>
         {categories.map((category) => (
-          <li key={category}>{category}</li>
+          <GiftGrid key={category} category={category} />
         ))}
       </ol>
     </>
