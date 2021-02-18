@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GiftItem/> Renderizado de componente 1`] = `
+<Fragment>
+  <div
+    className="card animate__animated animate__fadeIn"
+  >
+    <img
+      alt="title"
+      src="http://"
+    />
+    <p>
+      title
+    </p>
+  </div>
+</Fragment>
+`;
