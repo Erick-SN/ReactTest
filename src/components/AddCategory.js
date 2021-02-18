@@ -8,7 +8,7 @@ const AddCategory = ({ setCategories }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input.trim().length > 2) {
-      setCategories((cats) => [...cats, input]);
+      setCategories((cats) => [input, ...cats]);
       setInput('');
     }
   };
