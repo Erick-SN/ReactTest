@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react';
 import GiftItem from './GiftItem';
-import { getGifs } from '../helpers/getGifts';
+import { useFetch } from '../hooks/useFetch';
 const GiftGrid = ({ category }) => {
-  const [images, setImages] = useState([]);
-  useEffect(() => {
-    getGifs(category).then((data) => setImages(data));
-  }, [category]);
-
+  const { data, loading } = useFetch(category);
   return (
     <>
       <h3>{category}</h3>
+      {loading && <p>Loading...</p>}
       <div className="card-gift">
-        {images.map((img) => (
+        {data.map((img) => (
           <GiftItem key={img.id} {...img} />
         ))}
       </div>
