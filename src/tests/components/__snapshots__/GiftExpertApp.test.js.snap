@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente < GiftExpertApp/> Prueba de renderizado correcto 1`] = `
+<Fragment>
+  <h2>
+    Encuentra tus gifts preferidos!
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GiftGrid
+      category="One Punch"
+      key="One Punch"
+    />
+  </ol>
+</Fragment>
+`;

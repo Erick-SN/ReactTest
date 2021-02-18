@@ -1,4 +1,5 @@
-const GiftItem = ({ id, title, url }) => {
+import PropTypes from 'prop-types';
+const GiftItem = ({ title, url }) => {
   return (
     <>
       <div className="card animate__animated animate__fadeIn">
@@ -8,5 +9,8 @@ const GiftItem = ({ id, title, url }) => {
     </>
   );
 };
-
+GiftItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
 export default GiftItem;

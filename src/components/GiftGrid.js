@@ -1,4 +1,5 @@
 import GiftItem from './GiftItem';
+import PropTypes from 'prop-types';
 import { useFetch } from '../hooks/useFetch';
 const GiftGrid = ({ category }) => {
   const { data, loading } = useFetch(category);
@@ -14,5 +15,7 @@ const GiftGrid = ({ category }) => {
     </>
   );
 };
-
+GiftGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+};
 export default GiftGrid;
