@@ -5,20 +5,22 @@ exports[`Pruebas en <GiftGrid/> Debe de mostrar items al ejecutar useFetch 1`] =
   <h3>
     Goku
   </h3>
-  <p>
-    Loading...
-  </p>
   <div
     className="card-gift"
-  />
+  >
+    <GiftItem
+      id="ABC"
+      key="ABC"
+      title="abc"
+      url="https://google.com"
+    />
+  </div>
 </Fragment>
 `;
 
 exports[`Pruebas en <GiftGrid/> Prueba de renderizado correcto 1`] = `
 <Fragment>
-  <h3>
-    Goku
-  </h3>
+  <h3 />
   <p>
     Loading...
   </p>
