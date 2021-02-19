@@ -1,3 +1,3 @@
 # ReactTest
 
-Focus on maket unit testing
+Focus on unit testing
