@@ -2,8 +2,8 @@ import { useState } from 'react';
 import AddCategory from './AddCategory';
 import GiftGrid from './GiftGrid';
 
-const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(['One Punch']);
+const GiftExpertApp = ({ defaultCat }) => {
+  const [categories, setCategories] = useState(defaultCat);
 
   return (
     <>
@@ -18,5 +18,7 @@ const GiftExpertApp = () => {
     </>
   );
 };
-
+GiftExpertApp.defaultProps = {
+  defaultCat: ['One Punch'],
+};
 export default GiftExpertApp;
